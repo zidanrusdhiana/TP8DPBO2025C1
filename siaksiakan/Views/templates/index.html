@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUDUL</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php">SIAK SIAKan</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $controller == 'student' ? 'active' : ''; ?>" href="index.php?controller=student&action=index">Mahasiswa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $controller == 'course' ? 'active' : ''; ?>" href="index.php?controller=course&action=index">Mata Kuliah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $controller == 'enrollment' ? 'active' : ''; ?>" href="index.php?controller=enrollment&action=index">Pendaftaran</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>PAGE_TITLE</h2>
+            <a href="index.php?controller=CONTROLLER&action=create" class="btn btn-primary">ADD_BUTTON_TEXT</a>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    TABLE_HEADER
+                </tr>
+            </thead>
+            <tbody>
+                TABLE_CONTENT
+            </tbody>
+        </table>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
